@@ -60,8 +60,7 @@ body.recovery-open #warningFlood{opacity:.24}
 @keyframes swarmTwitch{0%{transform:translate(0,0) rotate(var(--r,0deg))}33%{transform:translate(-1px,1px) rotate(var(--r,0deg))}66%{transform:translate(1px,-1px) rotate(var(--r,0deg))}100%{transform:translate(0,1px) rotate(var(--r,0deg))}}
 @keyframes feedbackJolt{50%{transform:translateX(4px)}}
 
-/* ===== QUIET OVERLAP HORROR / BELIEF INFESTATION ===== */
-/* 움직임보다 겹침과 잔상으로 오염을 표현한다. */
+
 .pollution-high #storyCard,
 .pollution-critical #storyCard{
   animation:none!important;
@@ -180,7 +179,6 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 .musa-scp-motto .agent-record-label{font-weight:700;color:#e11d48;letter-spacing:.08em;margin-bottom:.05rem;}
 .musa-scp-motto span{font-weight:700;color:#0f172a;}
 
-/* 엔딩 사원증 오염 기록 */
 .musa-scp-portrait::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;mix-blend-mode:multiply;background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 4px),radial-gradient(circle at 30% 20%,rgba(0,0,0,.16),transparent 45%);transition:opacity .4s ease}
 .portrait-corruption{position:absolute;inset:0;pointer-events:none;opacity:0;z-index:3;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");mix-blend-mode:multiply}
 .portrait-corruption i{position:absolute;top:36%;width:20%;height:7%;background:#020202;border-radius:50%;filter:blur(3px);opacity:0}.portrait-corruption i:first-child{left:25%}.portrait-corruption i:last-child{right:25%}
